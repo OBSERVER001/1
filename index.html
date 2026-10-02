@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <p class="eyebrow">Countdown</p>
+        <h1>October 10, 2026</h1>
+        <p class="target-time">Target time: 5:00 PM UTC</p>
+
+        <div id="timer" class="timer" aria-live="polite">
+          <div class="time-box">
+            <span id="days">00</span>
+            <label>Days</label>
+          </div>
+          <div class="time-box">
+            <span id="hours">00</span>
+            <label>Hours</label>
+          </div>
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <label>Minutes</label>
+          </div>
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <label>Seconds</label>
+          </div>
+        </div>
+
+        <div id="expired" class="expired hidden" aria-live="assertive">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+            alt="Time's up"
+          />
+          <h2>Time's up!</h2>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
